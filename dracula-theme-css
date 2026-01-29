@@ -1,19 +1,3 @@
-/*
-* Dracula Theme for Thymer
-* Official dark/light color scheme by Dracula Theme
-* Variants: Dracula Classic (Dark) and Alucard Classic (Light)
-*
-* Color Usage Based on Official Dracula Spec:
-* - Pink (#FF79C6): Keywords, storage types, control flow
-* - Yellow (#F1FA8C): Functions, methods, built-in functions
-* - Purple (#BD93F9): Classes, types, variables, interfaces
-* - Green (#50FA7B): Strings, text, inherited classes
-* - Orange (#FFB86C): Numbers, constants, booleans
-* - Cyan (#8BE9FD): Support functions, regex, CSS properties
-* - Red (#FF5555): Errors, warnings, deletion
-* - Comment (#6272A4): Comments, disabled code
-*/
-
 /* ------------------------------------------- */
 /* Dracula Classic - Vibrant Dark             */
 /* ------------------------------------------- */
@@ -147,8 +131,11 @@ html[data-theme="basic-dark-dracula"] {
     /* ------------------------------------------- */
     --ed-quote-border-color: #BD93F9;
 
-    --ed-code-border: transparent;
-    --ed-code-bg: rgba(68, 71, 90, 0.4);
+    --ed-container-border-color: rgba(68, 71, 90, 0.25);  /* #44475A */
+    --ed-container-bg-color:     rgba(98, 114, 164, 0.08); /* #6272A4 */
+    
+    --ed-code-bg:                rgba(68, 71, 90, 0.25);  /* #44475A */
+    --ed-code-border:            rgba(98, 114, 164, 0.08); /* #6272A4 */
 
     /* Inline code */
     .lineitem-code {
@@ -232,7 +219,7 @@ html[data-theme="basic-dark-dracula"] {
 /* ------------------------------------------- */
 /* Alucard Classic - Elegant Light            */
 /* ------------------------------------------- */
-html[data-theme="basic-white-alucard"] {
+html[data-theme="basic-light-alucard"] {
     color-scheme: light;
 
     /* ------------------------------------------- */
@@ -360,8 +347,11 @@ html[data-theme="basic-white-alucard"] {
     /* ------------------------------------------- */
     --ed-quote-border-color: #644AC9;
 
-    --ed-code-border: transparent;
-    --ed-code-bg: rgba(207, 207, 222, 0.3);
+    --ed-container-border-color: rgba(207, 207, 222, 0.25); /* #CFCFDE */
+    --ed-container-bg-color:     rgba(188, 186, 179, 0.08); /* #BCBAB3 */
+    
+    --ed-code-bg:                rgba(207, 207, 222, 0.25); /* #CFCFDE */
+    --ed-code-border:            rgba(188, 186, 179, 0.08); /* #BCBAB3 */
 
     /* Inline code */
     .lineitem-code {
