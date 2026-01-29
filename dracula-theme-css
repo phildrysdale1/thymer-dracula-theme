@@ -1,0 +1,444 @@
+/*
+* Dracula Theme for Thymer
+* Official dark/light color scheme by Dracula Theme
+* Variants: Dracula Classic (Dark) and Alucard Classic (Light)
+*
+* Color Usage Based on Official Dracula Spec:
+* - Pink (#FF79C6): Keywords, storage types, control flow
+* - Yellow (#F1FA8C): Functions, methods, built-in functions
+* - Purple (#BD93F9): Classes, types, variables, interfaces
+* - Green (#50FA7B): Strings, text, inherited classes
+* - Orange (#FFB86C): Numbers, constants, booleans
+* - Cyan (#8BE9FD): Support functions, regex, CSS properties
+* - Red (#FF5555): Errors, warnings, deletion
+* - Comment (#6272A4): Comments, disabled code
+*/
+
+/* ------------------------------------------- */
+/* Dracula Classic - Vibrant Dark             */
+/* ------------------------------------------- */
+html[data-theme="basic-dark-dracula"] {
+    color-scheme: dark;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Bright Purple               */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #BD93F9;
+    }
+
+    --text-base-size: 16px;
+  
+    /* ------------------------------------------- */
+    /* 2. Background Colors - Dark Purple Tones  */
+    /* ------------------------------------------- */
+    --color-bg-50: #6272A4;
+    --color-bg-100: #44475A;
+    --color-bg-150: #3d4051;
+    --color-bg-200: #363948;
+    --color-bg-300: #2f323f;
+    --color-bg-400: #282A36;
+    --color-bg-500: #282A36;
+    --color-bg-600: #282A36;
+    --color-bg-700: #21222C;
+    --color-bg-800: #343746; /* Sidebar - background light */
+    --color-bg-900: #282A36;  /* Main window - main background */
+    --color-bg-950: #191A21;
+    --color-bg-500-50: rgba(40, 42, 54, 0.5);
+    --color-bg-950-50: rgba(25, 26, 33, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors - Dracula Pink           */
+    /* ------------------------------------------- */
+    --color-primary-50: #ffe7f4;
+    --color-primary-100: #ffc9e8;
+    --color-primary-200: #ffa6da;
+    --color-primary-300: #ff93d1;
+    --color-primary-400: #FF79C6; /* Dracula Pink */
+    --color-primary-500: #f969bc;
+    --color-primary-600: #f355af;
+    --color-primary-700: #e641a1;
+    --color-primary-800: #d92d93;
+    --color-primary-900: #cc1985;
+    --color-primary-950: #a00566;
+    --color-primary-400-70: rgba(255, 121, 198, 0.7);
+    --color-primary-950-20: rgba(160, 5, 102, 0.2);
+    --color-primary-text-100: #282A36;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons - Bright Foreground       */
+    /* ------------------------------------------- */
+    --color-text-50: #F8F8F2;
+    --color-text-100: #F8F8F2;
+    --color-text-200: #e8e8e2;
+    --color-text-300: #d8d8d2;
+    --color-text-400: #c8c8c2;
+    --color-text-500: #a8a8a2;
+    --color-text-600: #6272A4;
+    --color-text-700: #FF79C6;
+    --color-text-800: #c8c8c2;
+    --color-text-900: #363948;
+    --color-text-950: #6272A4;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors - Dracula Palette      */
+    /* ------------------------------------------- */
+    --text-ok: #50FA7B;
+    --text-status-online: #50FA7B;
+    --text-warning: #F1FA8C;
+    --text-error: #FF5555;
+    --bg-alert: #FF5555;
+    --fg-alert: #F8F8F2;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions - Themed        */
+    /* ------------------------------------------- */
+    --link-color: #8BE9FD;
+    --link-hover-color: #a4f0ff;
+    --ed-link-color: #8BE9FD;
+    --ed-link-hover-color: #a4f0ff;
+
+    --ed-hashtag-color: #BD93F9;
+    --ed-hashtag-bg: rgba(189, 147, 249, 0.15);
+
+    --ed-mention-color: #8BE9FD;
+    --ed-mention-bg: rgba(139, 233, 253, 0.15);
+    --ed-mention-hover-bg: rgba(139, 233, 253, 0.25);
+    --ed-mention-hover-color: #a4f0ff;
+
+    --ed-datetime-color: #FFB86C;
+    --ed-datetime-bg: rgba(255, 184, 108, 0.15);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes - Pink              */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #FF79C6;
+    --ed-check-div-hover-border: #ff93d1;
+    --ed-check-done-bg: #FF79C6;
+    --ed-check-done-fg: #282A36;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #6272A4 !important;
+        text-decoration-color: #6272A4 !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                        */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(68, 71, 90, 0.8);
+    --selection-fg: #F8F8F2;
+    --ed-selection-self-bg: rgba(68, 71, 90, 0.8);
+    --ed-selection-blurred-bg: rgba(68, 71, 90, 0.5);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: color-mix(in srgb, #FF79C6 70%, transparent);
+    --ed-caret-self-box-shadow: 0 0 2px #FF79C6;
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code - Dark Containers         */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #BD93F9;
+
+    --ed-code-border: transparent;
+    --ed-code-bg: rgba(68, 71, 90, 0.4);
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #FFB86C !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(189, 147, 249, 0.1);
+    --ed-block-note-border: #BD93F9;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components - Dark Interface         */
+    /* ------------------------------------------- */
+    --cards-bg: #282A36;
+    --cards-hover-bg: #343746;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #FF79C6;
+    --side-fg-active-focus: #282A36;
+    --sidebar-bg-hover: #343746;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #282A36;
+    --cmdpal-selected-bg-color: #FF79C6;
+    --cmdpal-selected-fg-color: #282A36;
+    --cmdpal-hover-bg-color: #343746;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #282A36;
+    --input-border-color: transparent;
+    --input-border-focus: 1px solid #FF79C6;
+    --input-border-shadow: 0 0 8px rgba(255, 121, 198, 0.4);
+
+    --button-primary-bg-color: #FF79C6;
+    --button-primary-fg-color: #282A36;
+    --button-primary-bg-hover-color: #ff93d1;
+    --button-bg-color: #343746;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #44475A;
+
+    --color-shadow: rgba(25, 26, 33, 0.5);
+    --color-shadow-cards: 0 4px 6px rgba(25, 26, 33, 0.4);
+    --color-shadow-hover: 0 6px 12px rgba(25, 26, 33, 0.5);
+
+    --logo-color: #FF79C6;
+    --logo-glow-shadow:
+        0 0 15px rgba(255, 121, 198, 0.4),
+        0 0 30px rgba(255, 121, 198, 0.2);
+
+    /* Enums - Dracula Palette */
+    --enum-red-bg: rgba(255, 85, 85, 0.25);
+    --enum-red-fg: #FF5555;
+    --enum-orange-bg: rgba(255, 184, 108, 0.25);
+    --enum-orange-fg: #FFB86C;
+    --enum-yellow-bg: rgba(241, 250, 140, 0.25);
+    --enum-yellow-fg: #F1FA8C;
+    --enum-green-bg: rgba(80, 250, 123, 0.25);
+    --enum-green-fg: #50FA7B;
+    --enum-cyan-bg: rgba(139, 233, 253, 0.25);
+    --enum-cyan-fg: #8BE9FD;
+    --enum-blue-bg: rgba(189, 147, 249, 0.25);
+    --enum-blue-fg: #BD93F9;
+    --enum-purple-bg: rgba(189, 147, 249, 0.25);
+    --enum-purple-fg: #BD93F9;
+    --enum-pink-bg: rgba(255, 121, 198, 0.25);
+    --enum-pink-fg: #FF79C6;
+
+    --prop-border-focused: #282A36;
+    --prop-bg-focused: rgba(255, 121, 198, 0.3);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #FF79C6;
+    --ed-drag-handle-hover-border: #ff93d1;
+
+    --gradient-scrim: none;
+}
+/* ------------------------------------------- */
+/* Alucard Classic - Elegant Light            */
+/* ------------------------------------------- */
+html[data-theme="basic-white-alucard"] {
+    color-scheme: light;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Deep Purple                  */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #644AC9;
+    }
+
+    /* ------------------------------------------- */
+    /* 2. Background Colors - Warm Cream          */
+    /* ------------------------------------------- */
+    --color-bg-50: #6C664B;
+    --color-bg-100: #BCBAB3;
+    --color-bg-150: #CECCC0;
+    --color-bg-200: #DEDCCF;
+    --color-bg-300: #ECE9DF;
+    --color-bg-400: #F5F3E8;
+    --color-bg-500: #FFFBEB;
+    --color-bg-600: #FFFBEB;
+    --color-bg-700: #FFFFFF;
+    --color-bg-800: #EFEDDC; /* Sidebar - light cream */
+    --color-bg-900: #FFFBEB; /* Main window - warm white */
+    --color-bg-950: #FFFFFF;
+    --color-bg-500-50: rgba(255, 251, 235, 0.5);
+    --color-bg-950-50: rgba(255, 255, 255, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors - Alucard Pink           */
+    /* ------------------------------------------- */
+    --color-primary-50: #4a0820;
+    --color-primary-100: #7a0d34;
+    --color-primary-200: #8f1040;
+    --color-primary-300: #a3144d;
+    --color-primary-400: #A3144D; /* Alucard Pink */
+    --color-primary-500: #bf185a;
+    --color-primary-600: #d93670;
+    --color-primary-700: #e35486;
+    --color-primary-800: #ed729c;
+    --color-primary-900: #f790b2;
+    --color-primary-950: #ffeef5;
+    --color-primary-400-70: rgba(163, 20, 77, 0.7);
+    --color-primary-950-20: rgba(255, 238, 245, 0.2);
+    --color-primary-text-100: #FFFBEB;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons - Deep Gray                */
+    /* ------------------------------------------- */
+    --color-text-50: #1F1F1F;
+    --color-text-100: #1F1F1F;
+    --color-text-200: #2a2a2a;
+    --color-text-300: #3f3f3f;
+    --color-text-400: #545454;
+    --color-text-500: #696969;
+    --color-text-600: #6C664B;
+    --color-text-700: #A3144D;
+    --color-text-800: #1F1F1F;
+    --color-text-900: #FFFBEB;
+    --color-text-950: #6C664B;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors - Alucard Palette       */
+    /* ------------------------------------------- */
+    --text-ok: #14710A;
+    --text-status-online: #14710A;
+    --text-warning: #846E15;
+    --text-error: #CB3A2A;
+    --bg-alert: #CB3A2A;
+    --fg-alert: #FFFBEB;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions - Themed         */
+    /* ------------------------------------------- */
+    --link-color: #036A96;
+    --link-hover-color: #047FB4;
+    --ed-link-color: #036A96;
+    --ed-link-hover-color: #047FB4;
+
+    --ed-hashtag-color: #644AC9;
+    --ed-hashtag-bg: rgba(100, 74, 201, 0.1);
+
+    --ed-mention-color: #036A96;
+    --ed-mention-bg: rgba(3, 106, 150, 0.1);
+    --ed-mention-hover-bg: rgba(3, 106, 150, 0.2);
+    --ed-mention-hover-color: #047FB4;
+
+    --ed-datetime-color: #A34D14;
+    --ed-datetime-bg: rgba(163, 77, 20, 0.1);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes - Pink               */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #A3144D;
+    --ed-check-div-hover-border: #bf185a;
+    --ed-check-done-bg: #A3144D;
+    --ed-check-done-fg: #FFFBEB;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #6C664B !important;
+        text-decoration-color: #6C664B !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                        */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(207, 207, 222, 0.6);
+    --selection-fg: #1F1F1F;
+    --ed-selection-self-bg: rgba(207, 207, 222, 0.6);
+    --ed-selection-blurred-bg: rgba(207, 207, 222, 0.3);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: color-mix(in srgb, #A3144D 70%, transparent);
+    --ed-caret-self-box-shadow: 0 0 2px #A3144D;
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code - Light Containers        */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #644AC9;
+
+    --ed-code-border: transparent;
+    --ed-code-bg: rgba(207, 207, 222, 0.3);
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #A34D14 !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(100, 74, 201, 0.08);
+    --ed-block-note-border: #644AC9;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components - Light Interface        */
+    /* ------------------------------------------- */
+    --cards-bg: #FFFBEB;
+    --cards-hover-bg: #EFEDDC;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #A3144D;
+    --side-fg-active-focus: #FFFBEB;
+    --sidebar-bg-hover: #EFEDDC;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #FFFBEB;
+    --cmdpal-selected-bg-color: #A3144D;
+    --cmdpal-selected-fg-color: #FFFBEB;
+    --cmdpal-hover-bg-color: #EFEDDC;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #FFFBEB;
+    --input-border-color: transparent;
+    --input-border-focus: 1px solid #A3144D;
+    --input-border-shadow: 0 0 8px rgba(163, 20, 77, 0.3);
+
+    --button-primary-bg-color: #A3144D;
+    --button-primary-fg-color: #FFFBEB;
+    --button-primary-bg-hover-color: #bf185a;
+    --button-bg-color: #EFEDDC;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #DEDCCF;
+
+    --color-shadow: rgba(31, 31, 31, 0.12);
+    --color-shadow-cards: 0 4px 6px rgba(31, 31, 31, 0.08);
+    --color-shadow-hover: 0 6px 12px rgba(31, 31, 31, 0.15);
+
+    --logo-color: #A3144D;
+    --logo-glow-shadow:
+        0 0 15px rgba(163, 20, 77, 0.3),
+        0 0 30px rgba(163, 20, 77, 0.2);
+
+    /* Enums - Alucard Palette */
+    --enum-red-bg: rgba(203, 58, 42, 0.15);
+    --enum-red-fg: #CB3A2A;
+    --enum-orange-bg: rgba(163, 77, 20, 0.15);
+    --enum-orange-fg: #A34D14;
+    --enum-yellow-bg: rgba(132, 110, 21, 0.15);
+    --enum-yellow-fg: #846E15;
+    --enum-green-bg: rgba(20, 113, 10, 0.15);
+    --enum-green-fg: #14710A;
+    --enum-cyan-bg: rgba(3, 106, 150, 0.15);
+    --enum-cyan-fg: #036A96;
+    --enum-blue-bg: rgba(100, 74, 201, 0.15);
+    --enum-blue-fg: #644AC9;
+    --enum-purple-bg: rgba(100, 74, 201, 0.15);
+    --enum-purple-fg: #644AC9;
+    --enum-pink-bg: rgba(163, 20, 77, 0.15);
+    --enum-pink-fg: #A3144D;
+
+    --prop-border-focused: #FFFBEB;
+    --prop-bg-focused: rgba(163, 20, 77, 0.15);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #A3144D;
+    --ed-drag-handle-hover-border: #bf185a;
+
+    --gradient-scrim: none;
+}
